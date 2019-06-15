@@ -1,7 +1,7 @@
 package com.apiit.eirlss.productioncomponent.eirlss_production.Controllers;
 
 
-import com.apiit.eirlss.productioncomponent.eirlss_production.Models.Leave;
+import com.apiit.eirlss.productioncomponent.eirlss_production.Models.LeaveType;
 import com.apiit.eirlss.productioncomponent.eirlss_production.Repositories.LeaveRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -16,33 +16,33 @@ public class LeaveController {
 
     @GetMapping(path = "/all")
     public @ResponseBody
-    Iterable<Leave> getLeaves() {
+    Iterable<LeaveType> getLeaves() {
         System.out.println("Fetching all products");
         return leaveRepository.findAll();
     }
 
     @GetMapping(path = "/{id}")
-    public Leave getLeave(@PathVariable String id) {
+    public LeaveType getLeave(@PathVariable String id) {
         System.out.println("Fetching product one by one");
         return leaveRepository.findById(id).get();
     }
 
     @PostMapping(path = "/new")
-    public Leave newLeave(@RequestBody Leave leave) {
+    public LeaveType newLeave(@RequestBody LeaveType leaveType) {
 
-        Leave newleave;
+        LeaveType newleave;
 
 
-        newleave = leaveRepository.save(leave);
+        newleave = leaveRepository.save(leaveType);
         System.out.println(newleave.getLeave_Type() + "is added ");
 
         return newleave;
     }
 
     @PutMapping
-    public Leave updateProduct(@RequestBody Leave leave) {
+    public LeaveType updateProduct(@RequestBody LeaveType leaveType) {
 
-        return leaveRepository.save(leave);
+        return leaveRepository.save(leaveType);
 
     }
 
@@ -50,8 +50,8 @@ public class LeaveController {
     public boolean deleteProduct(@PathVariable String id) {
 
         boolean flag;
-        Leave leave = getLeave(id);
-        if(leave != null){
+        LeaveType leaveType = getLeave(id);
+        if(leaveType != null){
             leaveRepository.deleteById(id);
             flag = true;
         }

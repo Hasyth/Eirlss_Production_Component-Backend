@@ -1,6 +1,4 @@
 package com.apiit.eirlss.productioncomponent.eirlss_production.Controllers;
-
-
 import com.apiit.eirlss.productioncomponent.eirlss_production.Models.Inspection;
 import com.apiit.eirlss.productioncomponent.eirlss_production.Repositories.InspectionRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -32,7 +30,6 @@ public class InspectionController {
 
         Inspection newinspection;
 
-
         newinspection = inspectionRepository.save(inspection);
         System.out.println(newinspection.getInspection_ID() + "is added ");
 
@@ -48,7 +45,6 @@ public class InspectionController {
 
     @DeleteMapping(path = "/{id}")
     public boolean deleteProduct(@PathVariable String id) {
-
         boolean flag;
         Inspection inspection = getInspection(id);
         if(inspection != null){

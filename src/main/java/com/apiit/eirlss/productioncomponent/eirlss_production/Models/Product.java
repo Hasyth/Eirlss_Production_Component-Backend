@@ -1,13 +1,13 @@
 package com.apiit.eirlss.productioncomponent.eirlss_production.Models;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import org.hibernate.annotations.GenericGenerator;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.sql.Time;
 import java.util.Date;
+import java.util.Set;
 
 @Entity
 public class Product {
@@ -18,6 +18,11 @@ public class Product {
     private String product_ID;
     private String product_Name;
     private String product_Qty;
+
+    @OneToMany(mappedBy = "product_ID")
+    @JsonIgnoreProperties("product_ID")
+    private Set<OrderItem> orderItems;
+
 
 
     public String getProduct_ID() {
@@ -43,4 +48,14 @@ public class Product {
     public void setProduct_Qty(String product_Qty) {
         this.product_Qty = product_Qty;
     }
+
+    public Set<OrderItem> getOrderItems() {
+        return orderItems;
+    }
+
+    public void setOrderItems(Set<OrderItem> orderItems) {
+        this.orderItems = orderItems;
+    }
+
+
 }

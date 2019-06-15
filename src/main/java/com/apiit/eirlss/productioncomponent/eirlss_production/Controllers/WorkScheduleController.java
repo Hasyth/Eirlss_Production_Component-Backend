@@ -5,10 +5,8 @@ import com.apiit.eirlss.productioncomponent.eirlss_production.Repositories.WorkS
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-
-
 @RestController
-@RequestMapping(value = "/product")
+@RequestMapping(value = "/workshedule")
 public class WorkScheduleController {
 
     @Autowired
@@ -31,7 +29,6 @@ public class WorkScheduleController {
     public WorkSchedule newWorkSchedule(@RequestBody WorkSchedule workSchedule) {
 
         WorkSchedule newworkschedule;
-
 
         newworkschedule = workScheduleRepository.save(workSchedule);
         System.out.println(newworkschedule.getSchedule_ID() + "is added ");

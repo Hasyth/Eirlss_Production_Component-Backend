@@ -1,15 +1,18 @@
 package com.apiit.eirlss.productioncomponent.eirlss_production.Models;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import java.util.Date;
+import java.util.Set;
 
 @Entity
-public class Order {
+public class SalesOrder {
     @Id
     @GeneratedValue(generator = "system-uuid")
     @GenericGenerator(name="system-uuid", strategy ="uuid")
@@ -18,6 +21,9 @@ public class Order {
     private Date start_Date;
     private Date end_Date;
 
+    @OneToMany(mappedBy = "salesOrder_ID")
+    @JsonIgnoreProperties("salesOrder_ID")
+    private Set<OrderItem> orderItems;
 
     public String getOrder_ID() {
         return order_ID;

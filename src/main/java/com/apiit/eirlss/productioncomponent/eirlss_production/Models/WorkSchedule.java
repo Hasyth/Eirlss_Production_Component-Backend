@@ -5,6 +5,7 @@ import org.hibernate.annotations.GenericGenerator;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 import java.sql.Time;
 import java.util.Date;
 
@@ -18,6 +19,15 @@ public class WorkSchedule {
     private Time start_Time;
     private Time end_Time;
     private Date date;
+
+    @ManyToOne
+    private Employee employee_ID;
+
+    @ManyToOne
+    private CapacityPlan plan_ID;
+
+    @ManyToOne
+    private OrderItem orderItem_ID;
 
     public String getSchedule_ID() {
         return schedule_ID;
@@ -49,5 +59,29 @@ public class WorkSchedule {
 
     public void setDate(Date date) {
         this.date = date;
+    }
+
+    public Employee getEmployee_ID() {
+        return employee_ID;
+    }
+
+    public void setEmployee_ID(Employee employee_ID) {
+        this.employee_ID = employee_ID;
+    }
+
+    public CapacityPlan getPlan_ID() {
+        return plan_ID;
+    }
+
+    public void setPlan_ID(CapacityPlan plan_ID) {
+        this.plan_ID = plan_ID;
+    }
+
+    public OrderItem getOrderItem_ID() {
+        return orderItem_ID;
+    }
+
+    public void setOrderItem_ID(OrderItem orderItem_ID) {
+        this.orderItem_ID = orderItem_ID;
     }
 }

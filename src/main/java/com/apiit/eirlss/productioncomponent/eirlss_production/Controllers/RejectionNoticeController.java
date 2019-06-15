@@ -1,11 +1,9 @@
 package com.apiit.eirlss.productioncomponent.eirlss_production.Controllers;
-
 import com.apiit.eirlss.productioncomponent.eirlss_production.Models.Product;
 import com.apiit.eirlss.productioncomponent.eirlss_production.Models.RejectionNotice;
 import com.apiit.eirlss.productioncomponent.eirlss_production.Repositories.RejectionNoticeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
 
 @RestController
 @RequestMapping(value = "/rejectionnotice")
@@ -14,7 +12,8 @@ public class RejectionNoticeController {
     @Autowired
     private RejectionNoticeRepository rejectionNoticeRepository;
 
-    @GetMapping(path = "/all")
+    @GetMapping(path = "/" +
+            "")
     public @ResponseBody
     Iterable<RejectionNotice> getRejectionNotices() {
         System.out.println("Fetching all products");
@@ -31,8 +30,6 @@ public class RejectionNoticeController {
     public RejectionNotice newRejectionNotice(@RequestBody RejectionNotice rejectionNotice) {
 
         RejectionNotice newrejectionnotice;
-
-
         newrejectionnotice = rejectionNoticeRepository.save(rejectionNotice);
         System.out.println(newrejectionnotice.getRejection_notice_ID() + "is added ");
 

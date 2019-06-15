@@ -1,17 +1,13 @@
 package com.apiit.eirlss.productioncomponent.eirlss_production.Controllers;
-
-
 import com.apiit.eirlss.productioncomponent.eirlss_production.Models.OrderItem;
 import com.apiit.eirlss.productioncomponent.eirlss_production.Repositories.OrderItemRepository;
 import org.aspectj.weaver.ast.Or;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-
 @RestController
 @RequestMapping(value = "/orderitem")
 public class OrderItemController {
-
 
     @Autowired
     private OrderItemRepository orderItemRepository;
@@ -36,7 +32,7 @@ public class OrderItemController {
 
 
         neworderitem = orderItemRepository.save(orderItem);
-        System.out.println(neworderitem.getOrderitem_ID() + "is added ");
+        System.out.println(neworderitem.getOrderItem_ID() + "is added ");
 
         return neworderitem;
     }

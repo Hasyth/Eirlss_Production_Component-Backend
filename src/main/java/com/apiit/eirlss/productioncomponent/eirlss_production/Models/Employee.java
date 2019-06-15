@@ -1,11 +1,11 @@
 package com.apiit.eirlss.productioncomponent.eirlss_production.Models;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import org.hibernate.annotations.GenericGenerator;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.Set;
 
 @Entity
 public class Employee {
@@ -13,12 +13,22 @@ public class Employee {
     @GeneratedValue(generator = "system-uuid")
     @GenericGenerator(name="system-uuid", strategy ="uuid")
     private String employee_ID;
+
     private String name;
     private String address;
     private Integer contact_Number;
     private String email;
     private String username;
     private String password;
+
+    @OneToMany(mappedBy = "employee_ID")
+    @JsonIgnoreProperties("employee_ID")
+    private Set<WorkSchedule> workSchedules;
+
+    @OneToMany(mappedBy = "employee_ID")
+    @JsonIgnoreProperties("employee_ID")
+    private Set<Inspection> inspections;
+
 
     public String getEmployee_ID() {
         return employee_ID;
@@ -74,5 +84,21 @@ public class Employee {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public Set<WorkSchedule> getWorkSchedules() {
+        return workSchedules;
+    }
+
+    public void setWorkSchedules(Set<WorkSchedule> workSchedules) {
+        this.workSchedules = workSchedules;
+    }
+
+    public Set<Inspection> getInspections() {
+        return inspections;
+    }
+
+    public void setInspections(Set<Inspection> inspections) {
+        this.inspections = inspections;
     }
 }

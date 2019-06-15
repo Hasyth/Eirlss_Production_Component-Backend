@@ -5,6 +5,7 @@ import org.hibernate.annotations.GenericGenerator;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 import java.util.Date;
 
 @Entity
@@ -17,8 +18,8 @@ public class RejectionNotice {
     private String rejected_Reason;
     private String remedy_Action;
 
-
-
+    @ManyToOne
+    private OrderItem orderItem_ID;
 
     public String getRejection_notice_ID() {
         return rejection_notice_ID;
@@ -50,5 +51,13 @@ public class RejectionNotice {
 
     public void setRemedy_Action(String remedy_Action) {
         this.remedy_Action = remedy_Action;
+    }
+
+    public OrderItem getOrderItem_ID() {
+        return orderItem_ID;
+    }
+
+    public void setOrderItem_ID(OrderItem orderItem_ID) {
+        this.orderItem_ID = orderItem_ID;
     }
 }

@@ -5,6 +5,7 @@ import org.hibernate.annotations.GenericGenerator;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 import java.sql.Time;
 import java.util.Date;
 
@@ -16,6 +17,9 @@ public class BillItem {
     @GenericGenerator(name="system-uuid", strategy ="uuid")
     private String billitem_ID;
     private String quantity;
+
+    @ManyToOne
+    private BillOfMaterials bom_ID;
 
     public String getBillitem_ID() {
         return billitem_ID;
@@ -31,5 +35,13 @@ public class BillItem {
 
     public void setQuantity(String quantity) {
         this.quantity = quantity;
+    }
+
+    public BillOfMaterials getBom_ID() {
+        return bom_ID;
+    }
+
+    public void setBom_ID(BillOfMaterials bom_ID) {
+        this.bom_ID = bom_ID;
     }
 }

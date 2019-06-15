@@ -1,6 +1,6 @@
 package com.apiit.eirlss.productioncomponent.eirlss_production.Controllers;
 
-import com.apiit.eirlss.productioncomponent.eirlss_production.Models.Order;
+import com.apiit.eirlss.productioncomponent.eirlss_production.Models.SalesOrder;
 import com.apiit.eirlss.productioncomponent.eirlss_production.Repositories.OrderRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -9,39 +9,38 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping(value = "/order")
 public class OrderController {
 
-
     @Autowired
     private OrderRepository orderRepository;
 
     @GetMapping(path = "/all")
     public @ResponseBody
-    Iterable<Order> getOrders() {
+    Iterable<SalesOrder> getOrders() {
         System.out.println("Fetching all products");
         return orderRepository.findAll();
     }
 
     @GetMapping(path = "/{id}")
-    public Order getOrder(@PathVariable String id) {
+    public SalesOrder getOrder(@PathVariable String id) {
         System.out.println("Fetching product one by one");
         return orderRepository.findById(id).get();
     }
 
     @PostMapping(path = "/new")
-    public Order newOrder(@RequestBody Order order) {
+    public SalesOrder newOrder(@RequestBody SalesOrder salesOrder) {
 
-        Order neworder;
+        SalesOrder neworder;
 
 
-        neworder = orderRepository.save(order);
+        neworder = orderRepository.save(salesOrder);
         System.out.println(neworder.getOrder_ID() + "is added ");
 
         return neworder;
     }
 
     @PutMapping
-    public Order updateProduct(@RequestBody Order order) {
+    public SalesOrder updateProduct(@RequestBody SalesOrder salesOrder) {
 
-        return orderRepository.save(order);
+        return orderRepository.save(salesOrder);
 
     }
 
@@ -49,8 +48,8 @@ public class OrderController {
     public boolean deleteProduct(@PathVariable String id) {
 
         boolean flag;
-        Order order = getOrder(id);
-        if(order != null){
+        SalesOrder salesOrder = getOrder(id);
+        if(salesOrder != null){
             orderRepository.deleteById(id);
             flag = true;
         }

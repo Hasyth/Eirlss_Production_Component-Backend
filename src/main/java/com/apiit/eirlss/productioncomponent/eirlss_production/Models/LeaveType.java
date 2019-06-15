@@ -9,7 +9,7 @@ import java.sql.Time;
 import java.util.Date;
 
 @Entity
-public class Leave {
+public class LeaveType {
     @Id
     @GeneratedValue(generator = "system-uuid")
     @GenericGenerator(name="system-uuid", strategy ="uuid")

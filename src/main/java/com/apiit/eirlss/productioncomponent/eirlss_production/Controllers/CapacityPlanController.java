@@ -31,7 +31,6 @@ public class CapacityPlanController {
 
         CapacityPlan newcapacityplan;
 
-
         newcapacityplan = capacityPlanRepository.save(capacityPlan);
         System.out.println(newcapacityplan.getPlan_ID() + "is added ");
 

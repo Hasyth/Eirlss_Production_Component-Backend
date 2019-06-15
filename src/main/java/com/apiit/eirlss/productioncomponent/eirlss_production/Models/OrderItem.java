@@ -1,26 +1,37 @@
 package com.apiit.eirlss.productioncomponent.eirlss_production.Models;
-
-
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import org.hibernate.annotations.GenericGenerator;
-
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.Set;
 
 @Entity
 public class OrderItem {
     @Id
     @GeneratedValue(generator = "system-uuid")
     @GenericGenerator(name="system-uuid", strategy ="uuid")
-    private String orderitem_ID;
+    private String orderItem_ID;
     private Integer quantity;
 
-    public String getOrderitem_ID() {
-        return orderitem_ID;
+    @OneToMany(mappedBy = "orderItem_ID")
+    @JsonIgnoreProperties("orderItem_ID")
+    private Set<WorkSchedule> workSchedules;
+
+    @OneToMany(mappedBy = "orderItem_ID")
+    @JsonIgnoreProperties("orderItem_ID")
+    private Set<RejectionNotice> rejectionNotices;
+
+    @ManyToOne
+    private SalesOrder salesOrder_ID;
+
+    @ManyToOne
+    private Product product_ID;
+
+    public String getOrderItem_ID() {
+        return orderItem_ID;
     }
 
-    public void setOrderitem_ID(String orderitem_ID) {
-        this.orderitem_ID = orderitem_ID;
+    public void setOrderItem_ID(String orderItem_ID) {
+        this.orderItem_ID = orderItem_ID;
     }
 
     public Integer getQuantity() {
@@ -30,4 +41,6 @@ public class OrderItem {
     public void setQuantity(Integer quantity) {
         this.quantity = quantity;
     }
+
+
 }
