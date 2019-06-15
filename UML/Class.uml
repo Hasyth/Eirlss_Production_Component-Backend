@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="1090.75" y="1263.0">com.apiit.eirlss.productioncomponent.eirlss_production.Repositories.RawMaterialsRepository</node>
+    <node x="1049.2129133597887" y="594.0">com.apiit.eirlss.productioncomponent.eirlss_production.Controllers.RejectionNoticeController</node>
+    <node x="1146.5" y="1139.0">com.apiit.eirlss.productioncomponent.eirlss_production.Models.RawMaterials</node>
+    <node x="74.5" y="1285.0">com.apiit.eirlss.productioncomponent.eirlss_production.Models.BillOfMaterials</node>
+    <node x="1067.0" y="1343.0">com.apiit.eirlss.productioncomponent.eirlss_production.Controllers.RawMaterialsController</node>
+    <node x="329.0" y="1431.0">com.apiit.eirlss.productioncomponent.eirlss_production.Controllers.BillItemController</node>
+    <node x="324.2129133597887" y="594.0">com.apiit.eirlss.productioncomponent.eirlss_production.Controllers.ProductController</node>
+    <node x="1444.75" y="1263.0">com.apiit.eirlss.productioncomponent.eirlss_production.Repositories.LeaveRepository</node>
+    <node x="768.0" y="805.0">com.apiit.eirlss.productioncomponent.eirlss_production.Controllers.OrderItemController</node>
+    <node x="333.90364583333337" y="1318.0">com.apiit.eirlss.productioncomponent.eirlss_production.Repositories.BillItemRepository</node>
+    <node x="342.4629133597887" y="329.0">com.apiit.eirlss.productioncomponent.eirlss_production.Repositories.ProductRepository</node>
+    <node x="610.2129133597887" y="594.0">com.apiit.eirlss.productioncomponent.eirlss_production.Controllers.OrderController</node>
+    <node x="1377.6353505291008" y="951.0">com.apiit.eirlss.productioncomponent.eirlss_production.Repositories.CapacityPlanRepository</node>
+    <node x="1431.0" y="1343.0">com.apiit.eirlss.productioncomponent.eirlss_production.Controllers.LeaveController</node>
+    <node x="1416.2129133597887" y="528.0">com.apiit.eirlss.productioncomponent.eirlss_production.Models.WorkSchedule</node>
+    <node x="1604.5103505291008" y="816.0">com.apiit.eirlss.productioncomponent.eirlss_production.Repositories.WorkScheduleRepository</node>
+    <node x="1287.1353505291008" y="772.0">com.apiit.eirlss.productioncomponent.eirlss_production.Models.CapacityPlan</node>
+    <node x="624.4629133597887" y="329.0">com.apiit.eirlss.productioncomponent.eirlss_production.Repositories.OrderRepository</node>
+    <node x="1471.0" y="1139.0">com.apiit.eirlss.productioncomponent.eirlss_production.Models.LeaveType</node>
+    <node x="0.0" y="1533.0">com.apiit.eirlss.productioncomponent.eirlss_production.Controllers.BillOfMaterialsController</node>
+    <node x="360.13535052910083" y="11.0">com.apiit.eirlss.productioncomponent.eirlss_production.Models.Product</node>
+    <node x="636.0" y="1343.0">com.apiit.eirlss.productioncomponent.eirlss_production.Controllers.ProductDesignItemController</node>
+    <node x="0.0" y="805.0">com.apiit.eirlss.productioncomponent.eirlss_production.Controllers.ProductDesignController</node>
+    <node x="122.21291335978867" y="605.0">com.apiit.eirlss.productioncomponent.eirlss_production.Repositories.ProductDesignRepositroy</node>
+    <node x="120.75" y="1139.0">com.apiit.eirlss.productioncomponent.eirlss_production.Models.BillItem</node>
+    <node x="719.5" y="1139.0">com.apiit.eirlss.productioncomponent.eirlss_production.Models.ProductDesignItem</node>
+    <node x="2072.390062830688" y="329.0">com.apiit.eirlss.productioncomponent.eirlss_production.Repositories.InspectionRepository</node>
+    <node x="1240.923363095238" y="329.0">com.apiit.eirlss.productioncomponent.eirlss_production.Repositories.RejectionNoticeRepository</node>
+    <node x="1689.1050264550267" y="22.0">com.apiit.eirlss.productioncomponent.eirlss_production.Models.Inspection</node>
+    <node x="669.25" y="1263.0">com.apiit.eirlss.productioncomponent.eirlss_production.Repositories.ProductDesignItemRepository</node>
+    <node x="55.46291335978867" y="296.0">com.apiit.eirlss.productioncomponent.eirlss_production.Models.ProductDesign</node>
+    <node x="1575.0775628306878" y="230.0">com.apiit.eirlss.productioncomponent.eirlss_production.Models.Employee</node>
+    <node x="920.9983630952381" y="263.0">com.apiit.eirlss.productioncomponent.eirlss_production.Models.OrderItem</node>
+    <node x="1578.7603505291008" y="940.0">com.apiit.eirlss.productioncomponent.eirlss_production.Controllers.WorkScheduleController</node>
+    <node x="128.0" y="1442.0">com.apiit.eirlss.productioncomponent.eirlss_production.Repositories.BillOfMaterialsRepository</node>
+    <node x="871.2129133597887" y="605.0">com.apiit.eirlss.productioncomponent.eirlss_production.Repositories.OrderItemRepository</node>
+    <node x="1805.5103505291008" y="805.0">com.apiit.eirlss.productioncomponent.eirlss_production.Controllers.EmployeeController</node>
+    <node x="1983.9591931216935" y="594.0">com.apiit.eirlss.productioncomponent.eirlss_production.Controllers.InspectionController</node>
+    <node x="1256.6353505291008" y="1042.0">com.apiit.eirlss.productioncomponent.eirlss_production.Controllers.CapacityPlanController</node>
+    <node x="1804.2895502645506" y="605.0">com.apiit.eirlss.productioncomponent.eirlss_production.Repositories.EmployeeRepository</node>
+    <node x="676.9629133597887" y="0.0">com.apiit.eirlss.productioncomponent.eirlss_production.Models.SalesOrder</node>
+    <node x="1128.223363095238" y="0.0">com.apiit.eirlss.productioncomponent.eirlss_production.Models.RejectionNotice</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.apiit.eirlss.productioncomponent.eirlss_production.Repositories.WorkScheduleRepository" target="com.apiit.eirlss.productioncomponent.eirlss_production.Models.WorkSchedule">
+      <point x="0.0" y="-15.0" />
+      <point x="1694.5103505291008" y="752.0" />
+      <point x="1560.2129133597887" y="752.0" />
+      <point x="48.0" y="92.0" />
+    </edge>
+    <edge source="com.apiit.eirlss.productioncomponent.eirlss_production.Repositories.ProductDesignRepositroy" target="com.apiit.eirlss.productioncomponent.eirlss_production.Models.ProductDesign">
+      <point x="0.0" y="-15.0" />
+      <point x="213.21291335978867" y="508.0" />
+      <point x="215.96291335978867" y="508.0" />
+      <point x="53.5" y="48.0" />
+    </edge>
+    <edge source="com.apiit.eirlss.productioncomponent.eirlss_production.Controllers.LeaveController" target="com.apiit.eirlss.productioncomponent.eirlss_production.Repositories.LeaveRepository">
+      <point x="-59.75" y="-26.0" />
+      <point x="1490.75" y="1318.0" />
+      <point x="1511.75" y="1318.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.apiit.eirlss.productioncomponent.eirlss_production.Controllers.InspectionController" target="com.apiit.eirlss.productioncomponent.eirlss_production.Models.Inspection">
+      <point x="-73.0" y="-26.0" />
+      <point x="2056.9591931216937" y="508.0" />
+      <point x="2061.890062830688" y="508.0" />
+      <point x="2061.890062830688" y="210.0" />
+      <point x="1831.6050264550267" y="210.0" />
+      <point x="47.5" y="48.0" />
+    </edge>
+    <edge source="com.apiit.eirlss.productioncomponent.eirlss_production.Repositories.RawMaterialsRepository" target="com.apiit.eirlss.productioncomponent.eirlss_production.Models.RawMaterials">
+      <point x="0.0" y="-15.0" />
+      <point x="1177.75" y="1238.0" />
+      <point x="1186.5" y="1238.0" />
+      <point x="-40.0" y="37.0" />
+    </edge>
+    <edge source="com.apiit.eirlss.productioncomponent.eirlss_production.Controllers.BillItemController" target="com.apiit.eirlss.productioncomponent.eirlss_production.Repositories.BillItemRepository">
+      <point x="-65.5" y="-26.0" />
+      <point x="394.5" y="1406.0" />
+      <point x="405.90364583333337" y="1406.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.apiit.eirlss.productioncomponent.eirlss_production.Models.WorkSchedule" target="com.apiit.eirlss.productioncomponent.eirlss_production.Models.CapacityPlan">
+      <point x="16.0" y="92.0" />
+      <point x="1528.2129133597887" y="752.0" />
+      <point x="1512.0103505291008" y="752.0" />
+      <point x="96.375" y="-59.0" />
+    </edge>
+    <edge source="com.apiit.eirlss.productioncomponent.eirlss_production.Models.OrderItem" target="com.apiit.eirlss.productioncomponent.eirlss_production.Models.WorkSchedule">
+      <point x="108.79999999999995" y="81.0" />
+      <point x="1165.798363095238" y="478.0" />
+      <point x="1484.784341931217" y="478.0" />
+      <point x="-27.42857142857156" y="-92.0" />
+    </edge>
+    <edge source="com.apiit.eirlss.productioncomponent.eirlss_production.Repositories.BillItemRepository" target="com.apiit.eirlss.productioncomponent.eirlss_production.Models.BillItem">
+      <point x="0.0" y="-15.0" />
+      <point x="405.90364583333337" y="1265.0" />
+      <point x="261.75" y="1265.0" />
+      <point x="46.99999999999997" y="48.0" />
+    </edge>
+    <edge source="com.apiit.eirlss.productioncomponent.eirlss_production.Models.Employee" target="com.apiit.eirlss.productioncomponent.eirlss_production.Models.Inspection">
+      <point x="-96.375" y="-114.0" />
+      <point x="1607.2025628306878" y="190.0" />
+      <point x="1704.93835978836" y="190.0" />
+      <point x="-79.16666666666674" y="48.0" />
+    </edge>
+    <edge source="com.apiit.eirlss.productioncomponent.eirlss_production.Models.OrderItem" target="com.apiit.eirlss.productioncomponent.eirlss_production.Models.RejectionNotice">
+      <point x="51.0" y="-81.0" />
+      <point x="1107.9983630952381" y="180.0" />
+      <point x="1148.3233630952382" y="180.0" />
+      <point x="-80.39999999999998" y="70.0" />
+    </edge>
+    <edge source="com.apiit.eirlss.productioncomponent.eirlss_production.Models.SalesOrder" target="com.apiit.eirlss.productioncomponent.eirlss_production.Models.OrderItem">
+      <point x="79.875" y="70.0" />
+      <point x="863.3379133597887" y="160.0" />
+      <point x="1073.9983630952381" y="160.0" />
+      <point x="17.0" y="-81.0" />
+    </edge>
+    <edge source="com.apiit.eirlss.productioncomponent.eirlss_production.Controllers.RejectionNoticeController" target="com.apiit.eirlss.productioncomponent.eirlss_production.Repositories.RejectionNoticeRepository">
+      <point x="86.75" y="-26.0" />
+      <point x="1309.4629133597887" y="508.0" />
+      <point x="1334.923363095238" y="508.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.apiit.eirlss.productioncomponent.eirlss_production.Controllers.ProductDesignItemController" target="com.apiit.eirlss.productioncomponent.eirlss_production.Models.ProductDesignItem">
+      <point x="96.5" y="-26.0" />
+      <point x="925.5" y="1318.0" />
+      <point x="885.75" y="1318.0" />
+      <point x="885.75" y="1238.0" />
+      <point x="883.75" y="1238.0" />
+      <point x="54.75" y="37.0" />
+    </edge>
+    <edge source="com.apiit.eirlss.productioncomponent.eirlss_production.Repositories.EmployeeRepository" target="com.apiit.eirlss.productioncomponent.eirlss_production.Models.Employee">
+      <point x="0.0" y="-15.0" />
+      <point x="1882.2895502645506" y="508.0" />
+      <point x="1767.8275628306878" y="508.0" />
+      <point x="64.25" y="114.0" />
+    </edge>
+    <edge source="com.apiit.eirlss.productioncomponent.eirlss_production.Controllers.OrderItemController" target="com.apiit.eirlss.productioncomponent.eirlss_production.Repositories.OrderItemRepository">
+      <point x="72.0" y="-26.0" />
+      <point x="984.0" y="752.0" />
+      <point x="950.2129133597887" y="752.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.apiit.eirlss.productioncomponent.eirlss_production.Controllers.EmployeeController" target="com.apiit.eirlss.productioncomponent.eirlss_production.Models.Employee">
+      <point x="71.5" y="-26.0" />
+      <point x="2020.0103505291008" y="752.0" />
+      <point x="1970.7895502645506" y="752.0" />
+      <point x="1970.7895502645506" y="498.0" />
+      <point x="1810.6608961640213" y="498.0" />
+      <point x="107.08333333333348" y="114.0" />
+    </edge>
+    <edge source="com.apiit.eirlss.productioncomponent.eirlss_production.Repositories.LeaveRepository" target="com.apiit.eirlss.productioncomponent.eirlss_production.Models.LeaveType">
+      <point x="0.0" y="-15.0" />
+      <point x="-39.75" y="37.0" />
+    </edge>
+    <edge source="com.apiit.eirlss.productioncomponent.eirlss_production.Controllers.RawMaterialsController" target="com.apiit.eirlss.productioncomponent.eirlss_production.Repositories.RawMaterialsRepository">
+      <point x="-79.75" y="-26.0" />
+      <point x="1146.75" y="1318.0" />
+      <point x="1177.75" y="1318.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.apiit.eirlss.productioncomponent.eirlss_production.Controllers.CapacityPlanController" target="com.apiit.eirlss.productioncomponent.eirlss_production.Repositories.CapacityPlanRepository">
+      <point x="79.5" y="-26.0" />
+      <point x="1495.1353505291008" y="1017.0" />
+      <point x="1464.1353505291008" y="1017.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.apiit.eirlss.productioncomponent.eirlss_production.Models.BillItem" target="com.apiit.eirlss.productioncomponent.eirlss_production.Models.BillOfMaterials">
+      <point x="15.666666666666657" y="48.0" />
+      <point x="230.41666666666666" y="1265.0" />
+      <point x="238.125" y="1265.0" />
+      <point x="70.125" y="-48.0" />
+    </edge>
+    <edge source="com.apiit.eirlss.productioncomponent.eirlss_production.Models.Product" target="com.apiit.eirlss.productioncomponent.eirlss_production.Models.OrderItem">
+      <point x="91.28571428571422" y="59.0" />
+      <point x="557.921064814815" y="180.0" />
+      <point x="1005.9983630952381" y="180.0" />
+      <point x="-51.0" y="-81.0" />
+    </edge>
+    <edge source="com.apiit.eirlss.productioncomponent.eirlss_production.Models.OrderItem" target="com.apiit.eirlss.productioncomponent.eirlss_production.Models.Product">
+      <point x="-119.0" y="-81.0" />
+      <point x="937.9983630952381" y="200.0" />
+      <point x="497.0639219576724" y="200.0" />
+      <point x="30.42857142857156" y="59.0" />
+    </edge>
+    <edge source="com.apiit.eirlss.productioncomponent.eirlss_production.Controllers.OrderController" target="com.apiit.eirlss.productioncomponent.eirlss_production.Repositories.OrderRepository">
+      <point x="-60.0" y="-26.0" />
+      <point x="670.2129133597887" y="508.0" />
+      <point x="691.4629133597887" y="508.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.apiit.eirlss.productioncomponent.eirlss_production.Models.OrderItem" target="com.apiit.eirlss.productioncomponent.eirlss_production.Models.SalesOrder">
+      <point x="-17.0" y="-81.0" />
+      <point x="1039.9983630952381" y="170.0" />
+      <point x="810.0879133597887" y="170.0" />
+      <point x="26.625" y="70.0" />
+    </edge>
+    <edge source="com.apiit.eirlss.productioncomponent.eirlss_production.Repositories.RejectionNoticeRepository" target="com.apiit.eirlss.productioncomponent.eirlss_production.Models.RejectionNotice">
+      <point x="0.0" y="-15.0" />
+      <point x="1334.923363095238" y="210.0" />
+      <point x="1309.1233630952381" y="210.0" />
+      <point x="80.40000000000009" y="70.0" />
+    </edge>
+    <edge source="com.apiit.eirlss.productioncomponent.eirlss_production.Controllers.CapacityPlanController" target="com.apiit.eirlss.productioncomponent.eirlss_production.Models.CapacityPlan">
+      <point x="-79.5" y="-26.0" />
+      <point x="1336.1353505291008" y="1017.0" />
+      <point x="1367.1353505291008" y="1017.0" />
+      <point x="1367.1353505291008" y="915.0" />
+      <point x="1351.3853505291008" y="915.0" />
+      <point x="-64.25" y="59.0" />
+    </edge>
+    <edge source="com.apiit.eirlss.productioncomponent.eirlss_production.Controllers.BillItemController" target="com.apiit.eirlss.productioncomponent.eirlss_production.Models.BillItem">
+      <point x="65.5" y="-26.0" />
+      <point x="525.5" y="1406.0" />
+      <point x="488.40364583333337" y="1406.0" />
+      <point x="488.40364583333337" y="1255.0" />
+      <point x="293.08333333333326" y="1255.0" />
+      <point x="78.33333333333329" y="48.0" />
+    </edge>
+    <edge source="com.apiit.eirlss.productioncomponent.eirlss_production.Models.CapacityPlan" target="com.apiit.eirlss.productioncomponent.eirlss_production.Models.WorkSchedule">
+      <point x="-32.125" y="-59.0" />
+      <point x="1383.5103505291008" y="742.0" />
+      <point x="1464.2129133597887" y="742.0" />
+      <point x="-48.0" y="92.0" />
+    </edge>
+    <edge source="com.apiit.eirlss.productioncomponent.eirlss_production.Controllers.OrderController" target="com.apiit.eirlss.productioncomponent.eirlss_production.Models.SalesOrder">
+      <point x="60.0" y="-26.0" />
+      <point x="790.2129133597887" y="508.0" />
+      <point x="768.9629133597887" y="508.0" />
+      <point x="768.9629133597887" y="210.0" />
+      <point x="756.8379133597887" y="210.0" />
+      <point x="-26.625" y="70.0" />
+    </edge>
+    <edge source="com.apiit.eirlss.productioncomponent.eirlss_production.Controllers.ProductDesignController" target="com.apiit.eirlss.productioncomponent.eirlss_production.Repositories.ProductDesignRepositroy">
+      <point x="84.5" y="-26.0" />
+      <point x="253.5" y="752.0" />
+      <point x="213.21291335978867" y="752.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.apiit.eirlss.productioncomponent.eirlss_production.Repositories.OrderRepository" target="com.apiit.eirlss.productioncomponent.eirlss_production.Models.SalesOrder">
+      <point x="0.0" y="-15.0" />
+      <point x="691.4629133597887" y="210.0" />
+      <point x="703.5879133597887" y="210.0" />
+      <point x="-79.875" y="70.0" />
+    </edge>
+    <edge source="com.apiit.eirlss.productioncomponent.eirlss_production.Repositories.ProductRepository" target="com.apiit.eirlss.productioncomponent.eirlss_production.Models.Product">
+      <point x="2.2737367544323206E-13" y="-15.0" />
+      <point x="415.4629133597889" y="210.0" />
+      <point x="436.2067791005295" y="210.0" />
+      <point x="-30.42857142857133" y="59.0" />
+    </edge>
+    <edge source="com.apiit.eirlss.productioncomponent.eirlss_production.Repositories.ProductDesignItemRepository" target="com.apiit.eirlss.productioncomponent.eirlss_production.Models.ProductDesignItem">
+      <point x="0.0" y="-15.0" />
+      <point x="772.25" y="1238.0" />
+      <point x="774.25" y="1238.0" />
+      <point x="-54.75" y="37.0" />
+    </edge>
+    <edge source="com.apiit.eirlss.productioncomponent.eirlss_production.Controllers.ProductController" target="com.apiit.eirlss.productioncomponent.eirlss_production.Repositories.ProductRepository">
+      <point x="-66.5" y="-26.0" />
+      <point x="390.7129133597887" y="508.0" />
+      <point x="415.4629133597887" y="508.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.apiit.eirlss.productioncomponent.eirlss_production.Controllers.BillOfMaterialsController" target="com.apiit.eirlss.productioncomponent.eirlss_production.Models.BillOfMaterials">
+      <point x="-84.0" y="-26.0" />
+      <point x="84.0" y="1508.0" />
+      <point x="117.5" y="1508.0" />
+      <point x="117.5" y="1406.0" />
+      <point x="121.25" y="1406.0" />
+      <point x="-46.75" y="48.0" />
+    </edge>
+    <edge source="com.apiit.eirlss.productioncomponent.eirlss_production.Controllers.RawMaterialsController" target="com.apiit.eirlss.productioncomponent.eirlss_production.Models.RawMaterials">
+      <point x="79.75" y="-26.0" />
+      <point x="1306.25" y="1318.0" />
+      <point x="1275.25" y="1318.0" />
+      <point x="1275.25" y="1238.0" />
+      <point x="1266.5" y="1238.0" />
+      <point x="40.0" y="37.0" />
+    </edge>
+    <edge source="com.apiit.eirlss.productioncomponent.eirlss_production.Models.ProductDesign" target="com.apiit.eirlss.productioncomponent.eirlss_production.Models.Product">
+      <point x="53.5" y="-48.0" />
+      <point x="215.96291335978867" y="210.0" />
+      <point x="405.77820767195794" y="210.0" />
+      <point x="-60.85714285714289" y="59.0" />
+    </edge>
+    <edge source="com.apiit.eirlss.productioncomponent.eirlss_production.Controllers.ProductDesignItemController" target="com.apiit.eirlss.productioncomponent.eirlss_production.Repositories.ProductDesignItemRepository">
+      <point x="-96.5" y="-26.0" />
+      <point x="732.5" y="1318.0" />
+      <point x="772.25" y="1318.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.apiit.eirlss.productioncomponent.eirlss_production.Controllers.EmployeeController" target="com.apiit.eirlss.productioncomponent.eirlss_production.Repositories.EmployeeRepository">
+      <point x="-71.5" y="-26.0" />
+      <point x="1877.0103505291008" y="752.0" />
+      <point x="1882.2895502645506" y="752.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.apiit.eirlss.productioncomponent.eirlss_production.Controllers.WorkScheduleController" target="com.apiit.eirlss.productioncomponent.eirlss_production.Models.WorkSchedule">
+      <point x="83.0" y="-26.0" />
+      <point x="1827.7603505291008" y="915.0" />
+      <point x="1795.0103505291008" y="915.0" />
+      <point x="1795.0103505291008" y="742.0" />
+      <point x="1592.2129133597887" y="742.0" />
+      <point x="80.0" y="92.0" />
+    </edge>
+    <edge source="com.apiit.eirlss.productioncomponent.eirlss_production.Repositories.BillOfMaterialsRepository" target="com.apiit.eirlss.productioncomponent.eirlss_production.Models.BillOfMaterials">
+      <point x="0.0" y="-15.0" />
+      <point x="218.5" y="1406.0" />
+      <point x="214.75" y="1406.0" />
+      <point x="46.75" y="48.0" />
+    </edge>
+    <edge source="com.apiit.eirlss.productioncomponent.eirlss_production.Repositories.OrderItemRepository" target="com.apiit.eirlss.productioncomponent.eirlss_production.Models.OrderItem">
+      <point x="0.0" y="-15.0" />
+      <point x="950.2129133597887" y="508.0" />
+      <point x="1002.598363095238" y="508.0" />
+      <point x="-54.40000000000009" y="81.0" />
+    </edge>
+    <edge source="com.apiit.eirlss.productioncomponent.eirlss_production.Controllers.OrderItemController" target="com.apiit.eirlss.productioncomponent.eirlss_production.Models.OrderItem">
+      <point x="-72.0" y="-26.0" />
+      <point x="840.0" y="752.0" />
+      <point x="860.7129133597887" y="752.0" />
+      <point x="860.7129133597887" y="498.0" />
+      <point x="948.1983630952382" y="498.0" />
+      <point x="-108.79999999999995" y="81.0" />
+    </edge>
+    <edge source="com.apiit.eirlss.productioncomponent.eirlss_production.Models.BillOfMaterials" target="com.apiit.eirlss.productioncomponent.eirlss_production.Models.BillItem">
+      <point x="-23.375" y="-48.0" />
+      <point x="144.625" y="1265.0" />
+      <point x="167.75" y="1265.0" />
+      <point x="-47.0" y="48.0" />
+    </edge>
+    <edge source="com.apiit.eirlss.productioncomponent.eirlss_production.Controllers.RejectionNoticeController" target="com.apiit.eirlss.productioncomponent.eirlss_production.Models.RejectionNotice">
+      <point x="-86.75" y="-26.0" />
+      <point x="1135.9629133597887" y="508.0" />
+      <point x="1230.423363095238" y="508.0" />
+      <point x="1230.423363095238" y="210.0" />
+      <point x="1268.923363095238" y="210.0" />
+      <point x="40.200000000000045" y="70.0" />
+    </edge>
+    <edge source="com.apiit.eirlss.productioncomponent.eirlss_production.Repositories.InspectionRepository" target="com.apiit.eirlss.productioncomponent.eirlss_production.Models.Inspection">
+      <point x="0.0" y="-15.0" />
+      <point x="2151.890062830688" y="200.0" />
+      <point x="1863.2716931216935" y="200.0" />
+      <point x="79.16666666666674" y="48.0" />
+    </edge>
+    <edge source="com.apiit.eirlss.productioncomponent.eirlss_production.Controllers.ProductController" target="com.apiit.eirlss.productioncomponent.eirlss_production.Models.Product">
+      <point x="66.5" y="-26.0" />
+      <point x="523.7129133597887" y="508.0" />
+      <point x="498.9629133597887" y="508.0" />
+      <point x="498.9629133597887" y="210.0" />
+      <point x="466.63535052910083" y="210.0" />
+      <point x="0.0" y="59.0" />
+    </edge>
+    <edge source="com.apiit.eirlss.productioncomponent.eirlss_production.Controllers.LeaveController" target="com.apiit.eirlss.productioncomponent.eirlss_production.Models.LeaveType">
+      <point x="59.75" y="-26.0" />
+      <point x="1610.25" y="1318.0" />
+      <point x="1589.25" y="1318.0" />
+      <point x="39.75" y="37.0" />
+    </edge>
+    <edge source="com.apiit.eirlss.productioncomponent.eirlss_production.Models.RejectionNotice" target="com.apiit.eirlss.productioncomponent.eirlss_production.Models.OrderItem">
+      <point x="0.0" y="70.0" />
+      <point x="1228.723363095238" y="200.0" />
+      <point x="1175.9983630952381" y="200.0" />
+      <point x="119.0" y="-81.0" />
+    </edge>
+    <edge source="com.apiit.eirlss.productioncomponent.eirlss_production.Repositories.CapacityPlanRepository" target="com.apiit.eirlss.productioncomponent.eirlss_production.Models.CapacityPlan">
+      <point x="0.0" y="-15.0" />
+      <point x="1464.1353505291008" y="915.0" />
+      <point x="1479.8853505291008" y="915.0" />
+      <point x="64.25" y="59.0" />
+    </edge>
+    <edge source="com.apiit.eirlss.productioncomponent.eirlss_production.Models.WorkSchedule" target="com.apiit.eirlss.productioncomponent.eirlss_production.Models.OrderItem">
+      <point x="-54.85714285714289" y="-92.0" />
+      <point x="1457.3557705026458" y="488.0" />
+      <point x="1111.3983630952382" y="488.0" />
+      <point x="54.40000000000009" y="81.0" />
+    </edge>
+    <edge source="com.apiit.eirlss.productioncomponent.eirlss_production.Models.Inspection" target="com.apiit.eirlss.productioncomponent.eirlss_production.Models.Employee">
+      <point x="15.833333333333258" y="48.0" />
+      <point x="96.375" y="-114.0" />
+    </edge>
+    <edge source="com.apiit.eirlss.productioncomponent.eirlss_production.Models.WorkSchedule" target="com.apiit.eirlss.productioncomponent.eirlss_production.Models.Employee">
+      <point x="0.0" y="-92.0" />
+      <point x="1512.2129133597887" y="478.0" />
+      <point x="1596.4942294973546" y="478.0" />
+      <point x="-107.08333333333326" y="114.0" />
+    </edge>
+    <edge source="com.apiit.eirlss.productioncomponent.eirlss_production.Controllers.ProductDesignController" target="com.apiit.eirlss.productioncomponent.eirlss_production.Models.ProductDesign">
+      <point x="-84.5" y="-26.0" />
+      <point x="84.5" y="752.0" />
+      <point x="111.71291335978867" y="752.0" />
+      <point x="111.71291335978867" y="508.0" />
+      <point x="108.96291335978867" y="508.0" />
+      <point x="-53.5" y="48.0" />
+    </edge>
+    <edge source="com.apiit.eirlss.productioncomponent.eirlss_production.Controllers.InspectionController" target="com.apiit.eirlss.productioncomponent.eirlss_production.Repositories.InspectionRepository">
+      <point x="73.0" y="-26.0" />
+      <point x="2202.9591931216937" y="508.0" />
+      <point x="2151.890062830688" y="508.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.apiit.eirlss.productioncomponent.eirlss_production.Controllers.WorkScheduleController" target="com.apiit.eirlss.productioncomponent.eirlss_production.Repositories.WorkScheduleRepository">
+      <point x="-83.0" y="-26.0" />
+      <point x="1661.7603505291008" y="915.0" />
+      <point x="1694.5103505291008" y="915.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.apiit.eirlss.productioncomponent.eirlss_production.Controllers.BillOfMaterialsController" target="com.apiit.eirlss.productioncomponent.eirlss_production.Repositories.BillOfMaterialsRepository">
+      <point x="84.0" y="-26.0" />
+      <point x="252.0" y="1508.0" />
+      <point x="218.5" y="1508.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.apiit.eirlss.productioncomponent.eirlss_production.Models.Employee" target="com.apiit.eirlss.productioncomponent.eirlss_production.Models.WorkSchedule">
+      <point x="21.416666666666742" y="114.0" />
+      <point x="1724.9942294973546" y="508.0" />
+      <point x="1594.498627645503" y="508.0" />
+      <point x="82.28571428571422" y="-92.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="2.400000000000001" x="2111.6574646917225" y="1631.5162669810998" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
