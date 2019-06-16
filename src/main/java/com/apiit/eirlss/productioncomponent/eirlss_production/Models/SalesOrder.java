@@ -97,6 +97,4 @@ public class SalesOrder {
     public void setOrderItems(Set<OrderItem> orderItems) {
         this.orderItems = orderItems;
     }
-
-
 }
