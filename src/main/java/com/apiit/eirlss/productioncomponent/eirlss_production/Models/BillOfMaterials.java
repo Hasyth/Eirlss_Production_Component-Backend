@@ -16,6 +16,7 @@ public class BillOfMaterials {
     @GenericGenerator(name="system-uuid", strategy ="uuid")
     @Column(name="bom_id")
     private String bom_ID;
+
     @Column(name="bom_status")
     private String bomStatus;
     @Column(name="order_date")
