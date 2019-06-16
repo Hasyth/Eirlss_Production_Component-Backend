@@ -19,11 +19,11 @@ public class SalesOrder {
     @Column(name="buisness_id")
     private String businessId;
     @Column(name="order_duedate")
-    private Date order_Duedate;
+    private Date orderDuedate;
     @Column(name="date")
     private Date date;
     @Column(name="end_date")
-    private Date end_Date;
+    private Date endDate;
     @Column(name="order_status")
     private String orderStatus;
     @Column(name="order_type")
@@ -51,11 +51,11 @@ public class SalesOrder {
     }
 
     public Date getOrder_Duedate() {
-        return order_Duedate;
+        return orderDuedate;
     }
 
     public void setOrder_Duedate(Date order_Duedate) {
-        this.order_Duedate = order_Duedate;
+        this.orderDuedate = order_Duedate;
     }
 
     public Date getDate() {
@@ -67,11 +67,11 @@ public class SalesOrder {
     }
 
     public Date getEnd_Date() {
-        return end_Date;
+        return endDate;
     }
 
     public void setEnd_Date(Date end_Date) {
-        this.end_Date = end_Date;
+        this.endDate = end_Date;
     }
 
     public String getOrderStatus() {
