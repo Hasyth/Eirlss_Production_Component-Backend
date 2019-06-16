@@ -15,15 +15,17 @@ public class Product {
     @Id
     @GeneratedValue(generator = "system-uuid")
     @GenericGenerator(name="system-uuid", strategy ="uuid")
+
+    @Column(name="product_id")
     private String product_ID;
+    @Column(name="product_name")
     private String product_Name;
+    @Column(name="product_qty")
     private String product_Qty;
 
-    @OneToMany(mappedBy = "product_ID")
-    @JsonIgnoreProperties("product_ID")
+    @OneToMany(mappedBy = "products")
+    @JsonIgnoreProperties("products")
     private Set<OrderItem> orderItems;
-
-
 
     public String getProduct_ID() {
         return product_ID;
@@ -56,6 +58,4 @@ public class Product {
     public void setOrderItems(Set<OrderItem> orderItems) {
         this.orderItems = orderItems;
     }
-
-
 }

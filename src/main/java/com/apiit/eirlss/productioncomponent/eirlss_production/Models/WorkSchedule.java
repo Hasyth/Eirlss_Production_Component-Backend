@@ -2,10 +2,7 @@ package com.apiit.eirlss.productioncomponent.eirlss_production.Models;
 
 import org.hibernate.annotations.GenericGenerator;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.ManyToOne;
+import javax.persistence.*;
 import java.sql.Time;
 import java.util.Date;
 
@@ -15,19 +12,26 @@ public class WorkSchedule {
     @Id
     @GeneratedValue(generator = "system-uuid")
     @GenericGenerator(name="system-uuid", strategy ="uuid")
+    @Column(name="schedule_id")
     private String schedule_ID;
+    @Column(name="start_time")
     private Time start_Time;
+    @Column(name="end_time")
     private Time end_Time;
+    @Column(name="date")
     private Date date;
 
     @ManyToOne
-    private Employee employee_ID;
+    @JoinColumn
+    private Employee employees;
 
     @ManyToOne
-    private CapacityPlan plan_ID;
+    @JoinColumn
+    private CapacityPlan capacityPlans;
 
     @ManyToOne
-    private OrderItem orderItem_ID;
+    @JoinColumn
+    private OrderItem orderItems;
 
     public String getSchedule_ID() {
         return schedule_ID;
@@ -61,29 +65,31 @@ public class WorkSchedule {
         this.date = date;
     }
 
-    public Employee getEmployee_ID() {
-        return employee_ID;
+    public Employee getEmployees() {
+        return employees;
     }
 
-    public void setEmployee_ID(Employee employee_ID) {
-        this.employee_ID = employee_ID;
+    public void setEmployees(Employee employees) {
+        this.employees = employees;
     }
 
-    public CapacityPlan getPlan_ID() {
-        return plan_ID;
+    public CapacityPlan getCapacityPlans() {
+        return capacityPlans;
     }
 
-    public void setPlan_ID(CapacityPlan plan_ID) {
-        this.plan_ID = plan_ID;
+    public void setCapacityPlans(CapacityPlan capacityPlans) {
+        this.capacityPlans = capacityPlans;
     }
 
-    public OrderItem getOrderItem_ID() {
-        return orderItem_ID;
+    public OrderItem getOrderItems() {
+        return orderItems;
     }
 
-    public void setOrderItem_ID(OrderItem orderItem_ID) {
-        this.orderItem_ID = orderItem_ID;
+    public void setOrderItems(OrderItem orderItems) {
+        this.orderItems = orderItems;
     }
+
+
 }
 
 

@@ -14,11 +14,18 @@ public class BillOfMaterials {
     @Id
     @GeneratedValue(generator = "system-uuid")
     @GenericGenerator(name="system-uuid", strategy ="uuid")
+    @Column(name="bom_id")
     private String bom_ID;
-    private Date order_Date;
+    @Column(name="bom_status")
+    private String bomStatus;
+    @Column(name="order_date")
+    private Date orderDate;
 
-    @OneToMany(mappedBy = "bom_ID")
-    @JsonIgnoreProperties("bom_ID")
+    @OneToOne
+    private OrderItem orderItems;
+
+    @OneToMany(mappedBy = "billOfMaterials")
+    @JsonIgnoreProperties("billOfMaterials")
     private Set<BillItem> billItems;
 
     public String getBom_ID() {
@@ -30,11 +37,11 @@ public class BillOfMaterials {
     }
 
     public Date getOrder_Date() {
-        return order_Date;
+        return orderDate;
     }
 
     public void setOrder_Date(Date order_Date) {
-        this.order_Date = order_Date;
+        this.orderDate = order_Date;
     }
 
     public Set<BillItem> getBillItems() {
@@ -43,5 +50,29 @@ public class BillOfMaterials {
 
     public void setBillItems(Set<BillItem> billItems) {
         this.billItems = billItems;
+    }
+
+    public String getBomStatus() {
+        return bomStatus;
+    }
+
+    public void setBomStatus(String bomStatus) {
+        this.bomStatus = bomStatus;
+    }
+
+    public Date getOrderDate() {
+        return orderDate;
+    }
+
+    public void setOrderDate(Date orderDate) {
+        this.orderDate = orderDate;
+    }
+
+    public OrderItem getOrderItems() {
+        return orderItems;
+    }
+
+    public void setOrderItems(OrderItem orderItems) {
+        this.orderItems = orderItems;
     }
 }

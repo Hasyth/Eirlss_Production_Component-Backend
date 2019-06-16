@@ -4,10 +4,7 @@ package com.apiit.eirlss.productioncomponent.eirlss_production.Models;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import org.hibernate.annotations.GenericGenerator;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
 import java.util.Date;
 import java.util.Set;
 
@@ -16,12 +13,16 @@ public class CapacityPlan {
     @Id
     @GeneratedValue(generator = "system-uuid")
     @GenericGenerator(name="system-uuid", strategy ="uuid")
+    @Column(name="plan_id")
     private String plan_ID;
+
+    @Column(name="start_date")
     private Date start_Date;
+    @Column(name="end_date")
     private Date end_Date;
 
-    @OneToMany(mappedBy = "plan_ID")
-    @JsonIgnoreProperties("plan_ID")
+    @OneToMany(mappedBy = "capacityplans")
+    @JsonIgnoreProperties("capacityplans")
     private Set<WorkSchedule> workSchedules;
 
     public String getPlan_ID() {
@@ -55,4 +56,6 @@ public class CapacityPlan {
     public void setWorkSchedules(Set<WorkSchedule> workSchedules) {
         this.workSchedules = workSchedules;
     }
+
+
 }

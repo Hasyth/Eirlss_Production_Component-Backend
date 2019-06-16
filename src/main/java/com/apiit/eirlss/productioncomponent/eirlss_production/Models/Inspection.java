@@ -1,10 +1,8 @@
 package com.apiit.eirlss.productioncomponent.eirlss_production.Models;
 
 import org.hibernate.annotations.GenericGenerator;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.ManyToOne;
+
+import javax.persistence.*;
 import java.sql.Time;
 import java.sql.Timestamp;
 import java.util.Date;
@@ -14,12 +12,17 @@ public class Inspection {
 
     @Id
     @GeneratedValue(generator = "system-uuid")
-    @GenericGenerator(name="system-uuid", strategy ="uuid")
+    @GenericGenerator(name = "system-uuid", strategy = "uuid")
+    @Column(name="inspection_id")
     private String inspection_ID;
+
+    @Column(name="date_time")
     private Timestamp date_Time;
 
     @ManyToOne
-    private Employee employee_ID;
+    @JoinColumn
+    private Employee employees;
+
 
     public String getInspection_ID() {
         return inspection_ID;
@@ -37,11 +40,11 @@ public class Inspection {
         this.date_Time = date_Time;
     }
 
-    public Employee getEmployee_ID() {
-        return employee_ID;
+    public Employee getEmployees() {
+        return employees;
     }
 
-    public void setEmployee_ID(Employee employee_ID) {
-        this.employee_ID = employee_ID;
+    public void setEmployees(Employee employees) {
+        this.employees = employees;
     }
 }

@@ -12,21 +12,27 @@ public class Employee {
     @Id
     @GeneratedValue(generator = "system-uuid")
     @GenericGenerator(name="system-uuid", strategy ="uuid")
+    @Column(name="employee_id")
     private String employee_ID;
-
+    @Column(name="name")
     private String name;
+    @Column(name="address")
     private String address;
+    @Column(name="contact_number")
     private Integer contact_Number;
+    @Column(name="email")
     private String email;
+    @Column(name="username")
     private String username;
+    @Column(name="password")
     private String password;
 
-    @OneToMany(mappedBy = "employee_ID")
-    @JsonIgnoreProperties("employee_ID")
+    @OneToMany(mappedBy = "employees")
+    @JsonIgnoreProperties("employees")
     private Set<WorkSchedule> workSchedules;
 
-    @OneToMany(mappedBy = "employee_ID")
-    @JsonIgnoreProperties("employee_ID")
+    @OneToMany(mappedBy = "employees")
+    @JsonIgnoreProperties("employees")
     private Set<Inspection> inspections;
 
 

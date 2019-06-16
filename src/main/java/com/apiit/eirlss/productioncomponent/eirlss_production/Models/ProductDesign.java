@@ -3,10 +3,7 @@ package com.apiit.eirlss.productioncomponent.eirlss_production.Models;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import org.hibernate.annotations.GenericGenerator;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.OneToOne;
+import javax.persistence.*;
 
 @Entity
 public class ProductDesign {
@@ -14,18 +11,21 @@ public class ProductDesign {
     @Id
     @GeneratedValue(generator = "system-uuid")
     @GenericGenerator(name="system-uuid", strategy ="uuid")
+    @Column(name = "design_id")
     private String design_ID;
+
+    @Column(name = "required_workhours")
     private Integer required_Workhours;
 
     @OneToOne
-    private Product product;
+    private Product products;
 
     public Product getProduct() {
-        return product;
+        return products;
     }
 
     public void setProduct(Product product) {
-        this.product = product;
+        this.products = product;
     }
 
     public String getDesign_ID() {

@@ -9,25 +9,28 @@ public class OrderItem {
     @Id
     @GeneratedValue(generator = "system-uuid")
     @GenericGenerator(name="system-uuid", strategy ="uuid")
+    @Column(name="order_item_id")
     private String orderItem_ID;
+
+    @Column(name="quantity")
     private Integer quantity;
 
-    @OneToMany(mappedBy = "orderItem_ID")
-    @JsonIgnoreProperties("orderItem_ID")
+    @OneToMany(mappedBy = "orderItems")
+    @JsonIgnoreProperties("orderItems")
     private Set<WorkSchedule> workSchedules;
 
-    @OneToMany(mappedBy = "orderItem_ID")
-    @JsonIgnoreProperties("orderItem_ID")
+    @OneToMany(mappedBy = "orderItems")
+    @JsonIgnoreProperties("orderItems")
     private Set<RejectionNotice> rejectionNotices;
 
 
     @ManyToOne
     @JoinColumn
-    @JsonIgnoreProperties("orderItems")
     private SalesOrder salesOrders;
 
     @ManyToOne
-    private Product product_ID;
+    @JoinColumn
+    private Product products;
 
     public String getOrderItem_ID() {
         return orderItem_ID;

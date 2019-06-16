@@ -13,20 +13,20 @@ public class SalesOrder {
     @Id
     @GeneratedValue(generator = "system-uuid")
     @GenericGenerator(name="system-uuid", strategy ="uuid")
-    @Column(name="order_id")
+    @Column(name = "order_id")
     private String orderId;
 
-    @Column(name="buisness_id")
+    @Column(name = "buisiness_id")
     private String businessId;
-    @Column(name="order_duedate")
+    @Column(name = "order_duedate")
     private Date orderDuedate;
-    @Column(name="date")
+    @Column(name = "date")
     private Date date;
-    @Column(name="end_date")
+    @Column(name = "end_date")
     private Date endDate;
-    @Column(name="order_status")
+    @Column(name = "order_status")
     private String orderStatus;
-    @Column(name="order_type")
+    @Column(name = "order_type")
     private String orderType;
 
 
@@ -50,12 +50,12 @@ public class SalesOrder {
         this.businessId = businessId;
     }
 
-    public Date getOrder_Duedate() {
+    public Date getOrderDuedate() {
         return orderDuedate;
     }
 
-    public void setOrder_Duedate(Date order_Duedate) {
-        this.orderDuedate = order_Duedate;
+    public void setOrderDuedate(Date orderDuedate) {
+        this.orderDuedate = orderDuedate;
     }
 
     public Date getDate() {
@@ -66,12 +66,12 @@ public class SalesOrder {
         this.date = date;
     }
 
-    public Date getEnd_Date() {
+    public Date getEndDate() {
         return endDate;
     }
 
-    public void setEnd_Date(Date end_Date) {
-        this.endDate = end_Date;
+    public void setEndDate(Date endDate) {
+        this.endDate = endDate;
     }
 
     public String getOrderStatus() {

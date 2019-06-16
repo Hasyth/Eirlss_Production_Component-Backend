@@ -2,10 +2,7 @@ package com.apiit.eirlss.productioncomponent.eirlss_production.Models;
 
 import org.hibernate.annotations.GenericGenerator;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.ManyToOne;
+import javax.persistence.*;
 import java.util.Date;
 
 @Entity
@@ -13,13 +10,20 @@ public class RejectionNotice {
     @Id
     @GeneratedValue(generator = "system-uuid")
     @GenericGenerator(name="system-uuid", strategy ="uuid")
+    @Column(name = "rejection_notice_id")
     private String rejection_notice_ID;
+
+    @Column(name = "notice_date")
     private Date notice_Date;
+    @Column(name = "rejected_reason")
     private String rejected_Reason;
+    @Column(name = "remedy_action")
     private String remedy_Action;
 
     @ManyToOne
-    private OrderItem orderItem_ID;
+    @JoinColumn
+    private OrderItem orderItems;
+
 
     public String getRejection_notice_ID() {
         return rejection_notice_ID;
@@ -53,11 +57,11 @@ public class RejectionNotice {
         this.remedy_Action = remedy_Action;
     }
 
-    public OrderItem getOrderItem_ID() {
-        return orderItem_ID;
+    public OrderItem getOrderItems() {
+        return orderItems;
     }
 
-    public void setOrderItem_ID(OrderItem orderItem_ID) {
-        this.orderItem_ID = orderItem_ID;
+    public void setOrderItems(OrderItem orderItems) {
+        this.orderItems = orderItems;
     }
 }

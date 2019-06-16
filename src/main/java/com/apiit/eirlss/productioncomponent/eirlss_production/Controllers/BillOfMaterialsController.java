@@ -12,6 +12,8 @@ public class BillOfMaterialsController {
 
     @Autowired
     private BillOfMaterialsRepository billOfMaterialsRepository;
+
+
     @GetMapping(path = "/all")
     public @ResponseBody
     Iterable<BillOfMaterials> getBills() {
