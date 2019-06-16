@@ -20,8 +20,11 @@ public class OrderItem {
     @JsonIgnoreProperties("orderItem_ID")
     private Set<RejectionNotice> rejectionNotices;
 
+
     @ManyToOne
-    private SalesOrder salesOrder_ID;
+    @JoinColumn
+    @JsonIgnoreProperties("orderItems")
+    private SalesOrder salesOrders;
 
     @ManyToOne
     private Product product_ID;
@@ -42,5 +45,11 @@ public class OrderItem {
         this.quantity = quantity;
     }
 
+    public SalesOrder getSalesOrders() {
+        return salesOrders;
+    }
 
+    public void setSalesOrders(SalesOrder salesOrders) {
+        this.salesOrders = salesOrders;
+    }
 }

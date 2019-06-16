@@ -32,7 +32,7 @@ public class OrderController {
 
 
         neworder = orderRepository.save(salesOrder);
-        System.out.println(neworder.getOrder_ID() + "is added ");
+        System.out.println(neworder.getOrderId() + "is added ");
 
         return neworder;
     }

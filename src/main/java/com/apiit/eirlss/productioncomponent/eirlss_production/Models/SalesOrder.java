@@ -4,10 +4,7 @@ package com.apiit.eirlss.productioncomponent.eirlss_production.Models;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import org.hibernate.annotations.GenericGenerator;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
 import java.util.Date;
 import java.util.Set;
 
@@ -16,21 +13,41 @@ public class SalesOrder {
     @Id
     @GeneratedValue(generator = "system-uuid")
     @GenericGenerator(name="system-uuid", strategy ="uuid")
-    private String order_ID;
-    private Date order_Duedate;
-    private Date start_Date;
-    private Date end_Date;
+    @Column(name="order_id")
+    private String orderId;
 
-    @OneToMany(mappedBy = "salesOrder_ID")
-    @JsonIgnoreProperties("salesOrder_ID")
+    @Column(name="buisness_id")
+    private String businessId;
+    @Column(name="order_duedate")
+    private Date order_Duedate;
+    @Column(name="date")
+    private Date date;
+    @Column(name="end_date")
+    private Date end_Date;
+    @Column(name="order_status")
+    private String orderStatus;
+    @Column(name="order_type")
+    private String orderType;
+
+
+    @OneToMany(mappedBy = "salesOrders")
+    @JsonIgnoreProperties("salesOrders")
     private Set<OrderItem> orderItems;
 
-    public String getOrder_ID() {
-        return order_ID;
+    public String getOrderId() {
+        return orderId;
     }
 
-    public void setOrder_ID(String order_ID) {
-        this.order_ID = order_ID;
+    public void setOrderId(String orderId) {
+        this.orderId = orderId;
+    }
+
+    public String getBusinessId() {
+        return businessId;
+    }
+
+    public void setBusinessId(String businessId) {
+        this.businessId = businessId;
     }
 
     public Date getOrder_Duedate() {
@@ -41,12 +58,12 @@ public class SalesOrder {
         this.order_Duedate = order_Duedate;
     }
 
-    public Date getStart_Date() {
-        return start_Date;
+    public Date getDate() {
+        return date;
     }
 
-    public void setStart_Date(Date start_Date) {
-        this.start_Date = start_Date;
+    public void setDate(Date date) {
+        this.date = date;
     }
 
     public Date getEnd_Date() {
@@ -56,4 +73,30 @@ public class SalesOrder {
     public void setEnd_Date(Date end_Date) {
         this.end_Date = end_Date;
     }
+
+    public String getOrderStatus() {
+        return orderStatus;
+    }
+
+    public void setOrderStatus(String orderStatus) {
+        this.orderStatus = orderStatus;
+    }
+
+    public String getOrderType() {
+        return orderType;
+    }
+
+    public void setOrderType(String orderType) {
+        this.orderType = orderType;
+    }
+
+    public Set<OrderItem> getOrderItems() {
+        return orderItems;
+    }
+
+    public void setOrderItems(Set<OrderItem> orderItems) {
+        this.orderItems = orderItems;
+    }
+
+
 }
