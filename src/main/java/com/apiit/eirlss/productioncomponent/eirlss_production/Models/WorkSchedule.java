@@ -27,7 +27,7 @@ public class WorkSchedule {
 
     @ManyToOne
     @JoinColumn
-    private CapacityPlan capacityPlans;
+    private CapacityPlan capacityplans;
 
     @ManyToOne
     @JoinColumn
@@ -74,11 +74,11 @@ public class WorkSchedule {
     }
 
     public CapacityPlan getCapacityPlans() {
-        return capacityPlans;
+        return capacityplans;
     }
 
     public void setCapacityPlans(CapacityPlan capacityPlans) {
-        this.capacityPlans = capacityPlans;
+        this.capacityplans = capacityPlans;
     }
 
     public OrderItem getOrderItems() {
